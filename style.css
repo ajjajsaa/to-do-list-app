@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap');
+
+body {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+    font-family: "Google Sans", sans-serif;
+}
+
+.container {
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    width: 400px;
+    box-shadow: 0 2px 50px rgb(255, 251, 0);
+}
+
+h2 {
+    font-size: 2rem;
+    color: goldenrod;
+}
+
+.input-area {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    gap: 10px;
+}
+
+input[type="text"] {
+    flex: 1;
+    padding: 10px;
+    border: 2px solid rgb(255, 212, 25);
+    border-radius: 5px;
+}
+
+input[type="text"]:focus {
+    outline: none;
+    border: 2px solid goldenrod;
+}
+
+.add-button {
+    padding: 10px 20px;
+    background-color: #66d15e;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.add-button:hover {
+    background-color: white;
+    border: 2px solid #66d15e;
+    color: #66d15e;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    gap: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+li {
+    background-color: #f9f9f9e7;
+    display: flex;
+    padding: 10px;
+    border-radius: 6px;
+    margin-bottom: 10px;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+}
+
+.delete-button {
+    padding: 8px;
+    background-color: #c32929;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 1rem;
+}
+
+.delete-button:hover {
+    background-color: white;
+    border: 2px solid #c32929;
+    color: #c32929;
+}
+
+
+@media screen and (max-width: 768px) {
+    body {
+        padding: 1rem;
+    }
+}
